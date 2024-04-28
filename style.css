@@ -1,0 +1,130 @@
+* {
+    font-family: Inter;
+}
+
+#nav {
+    background-color: #303030;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#inpt {
+    background-color: #EAECE5;
+}
+
+#calendary {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#search {
+    color: #247BA0;
+    border-color: #247BA0;
+}
+
+.calendar {
+    width: 60%;
+    max-height: 600px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #247BA0;
+
+
+}
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.calendar .header .month {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.calendar .header .btn {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar .header .btn .btn {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #303030;
+    background-color: #EAECE5;
+    transition: all 0.3s;
+}
+
+.calendar .header .btn .btn:hover {
+    background-color: #6ac1c5;
+    transform: scale(1.05);
+}
+
+.weekdays {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.weekdays .day {
+    width: calc(100% / 7 - 10px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.days .day,
+.day.next,
+.day.prev,
+.day.today {
+    width: calc(100% / 7 - 10px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #303030;
+    background-color: #EAECE5;
+    transition: all 0.3s;
+}
+
+.days .day:not(.day.next):not(.day.prev):hover {
+    color: #fff;
+    background-color: #6ac1c5;
+    transform: scale(1.05);
+}
+
+.days .day.today {
+    color: #fff;
+    background-color: #6ac1c5;
+    transform: scale(1.05);
+}
+
+.days .day.next,
+.days .day.prev {
+    color: #ccc;
+}
