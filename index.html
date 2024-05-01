@@ -25,33 +25,75 @@
             </form>
         </div>
     </nav>
-    <div id="calendary" class="container-fluid">
-        <div class="calendar">
-            <div class="header">
-                <div class="month"></div>
-                <div class="btns">
-                    <div class="btn today">
-                        <i class="fa-regular fa-calendar"></i>
-                    </div>
-                    <div class="btn prev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
-                    <div class="btn next">
-                        <i class="fa-solid fa-chevron-right"></i>
+    <div id="todo" class="container-fluid row justify-content">
+        <div id="calendary" class="container-fluid">
+            <div class="calendar">
+                <div class="header">
+                    <div class="month"></div>
+                    <div class="btns">
+                        <div class="btn today">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                        <div class="btn prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="btn next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="weekdays">
+                    <div class="day">Dom</div>
+                    <div class="day">Seg</div>
+                    <div class="day">Ter</div>
+                    <div class="day">Qua</div>
+                    <div class="day">Qui</div>
+                    <div class="day">Sex</div>
+                    <div class="day">Sab</div>
+                </div>
+                <div class="days">
+                </div>
             </div>
-            <div class="weekdays">
-                <div class="day">Dom</div>
-                <div class="day">Seg</div>
-                <div class="day">Ter</div>
-                <div class="day">Qua</div>
-                <div class="day">Qui</div>
-                <div class="day">Sex</div>
-                <div class="day">Sab</div>
-            </div>
-            <div class="days">
+        </div>
+        <div id="todoContainer" class="container-fluid">
+            <header>
+                <div class="selectDate"></div>
+            </header>
+            <form id="todo-form">
+                <h4>Adicione a sua tarefa</h4>
+                <div class="form-control">
+                    <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                    <button type="submit">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </form> <br>
 
+            <div id="todo-list">
+                <div class="todo done">
+                    <h3>Estou fazendo alguma coisa...</h3>
+                    <button class="finish-todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="todo">
+                    <h3>Estudar JavaScript</h3>
+                    <button class="finish-todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
